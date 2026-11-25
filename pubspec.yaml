@@ -1,0 +1,37 @@
+name: flutter_application_1
+description: Jordan Tour App
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.19.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+    
+  flutter_tts: ^4.2.5
+  cupertino_icons: ^1.0.5
+  audioplayers: 6.5.1         # محدث
+  url_launcher: ^6.3.2        # محدث
+  youtube_player_flutter: ^9.1.3
+
+  # 🔊 تشغيل صوت يوتيوب بدون فيديو
+  youtube_explode_dart: ^3.0.5
+
+  # 🔊 تشغيل رابط الصوت
+  just_audio: ^0.10.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  # انتبه جداً للمسافات هنا (كل فراغ محسوب)
+  assets:
+    - assets/error.mp3
+    - assets/correct.mp3
